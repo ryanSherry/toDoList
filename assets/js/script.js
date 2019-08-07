@@ -25,3 +25,7 @@ $("#newTask").keypress(
 	}
 	}
 );
+
+$("#plus").click(() => {
+	$("input[type='text']").fadeToggle();
+});
