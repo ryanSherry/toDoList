@@ -18,10 +18,14 @@ $("#newTask").keypress(
 		let taskValue = $("#newTask").val();
 
 		if(event.which === 13 || event.keyCode === 13){
-		$("#taskList").append("<li>" + "<span>" + "X" + "</span> " + taskValue + "</li>");
+		$("#taskList").append("<li><span><i class='fa fa-trash'></i></span> " + taskValue + "</li>");
 		$("#newTask").val("");
 		return true;
 		}
 	}
 	}
 );
+
+$("#plus").click(() => {
+	$("input[type='text']").fadeToggle();
+});

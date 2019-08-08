@@ -3,15 +3,16 @@
 <head>
 	<title>Todo List</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div id="container">
-		<h1>TO-DO LIST</h1>
-		<input type="text" name="newTask" id="newTask">
+		<h1>TO-DO LIST <div id="plus" ><i class="fa fa-plus"></i></div></h1>
+		<input type="text" name="newTask" id="newTask" placeholder="Add New Todo">
 		<ul id="taskList">
-			<li><span>X</span> Go to Potions Class</li>
-			<li><span>X</span> Buy New Robes</li>
-			<li><span>X</span> Visit Hagrid</li>
+			<li><span><i class="fa fa-trash"></i></span> Go to Potions Class</li>
+			<li><span><i class="fa fa-trash"></i></span> Buy New Robes</li>
+			<li><span><i class="fa fa-trash"></i></span> Visit Hagrid</li>
 		</ul>
 	</div>
 	<script
@@ -19,5 +20,6 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   	<script type="text/javascript" src="assets/js/script.js"></script>
+  	<script src="https://kit.fontawesome.com/ba697fec45.js"></script>
 </body>
 </html>
